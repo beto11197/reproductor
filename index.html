@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reproductor de videos</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <p>Reproductor de videos</p>
+    </header>
+    <section class="reprod-main">
+        <div class="reprod-L container">
+            <div id="video_player">
+                <div class="loader"></div>
+                <div>
+                    <video preload="metadata" id="main-video" poster="src/perfecta_img.png">
+                        <source src="src/perfecta.mp4" type="video/mp4" />
+                        <track id="track1" label="Origen" kind="subtitles"
+                            src="src/perfecta.vtt" srclang="en">
+                        <!-- <track id="track1" label="English" kind="subtitles"
+                            src="./How To Get Started With VSCode.vtt" srclang="en">
+                        <track id="track2" label="Urdu" kind="subtitles" src="./test.vtt" srclang="en"> -->
+                    </video>
+                    <p class="caption_text"></p>
+                    <div class="thumbnail"></div>
+                    <div class="progressAreaTime">0:00</div>
+
+                    <div class="controls">
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <div class="controls-list">
+                            <div class="controls-left">
+                                <span class="icon">
+                                    <i class="material-icons fast-rewind">replay_10</i>
+                                </span>
+
+                                <span class="icon">
+                                    <i class="material-icons play_pause">play_arrow</i>
+                                </span>
+
+                                <span class="icon">
+                                    <i class="material-icons fast-forward">forward_10</i>
+                                </span>
+
+                                <span class="icon">
+                                    <i class="material-icons volume">volume_up</i>
+
+                                    <input type="range" min="0" max="100" class="volume_range" />
+                                </span>
+
+                                <div class="timer">
+                                    <span class="current">0:00</span> /
+                                    <span class="duration">0:00</span>
+                                </div>
+                            </div>
+
+                            <div class="controls-right">
+                                <!-- <span class="icon">
+                                    <i class="material-icons auto-play"></i>
+                                </span> -->
+
+                                <span class="icon">
+                                    <i class="material-icons captionsBtn">closed_caption</i>
+                                </span>
+
+                                <span class="icon">
+                                    <i class="material-icons settingsBtn">settings</i>
+                                </span>
+
+                                <span class="icon">
+                                    <i class="material-icons picture_in_picutre">picture_in_picture_alt</i>
+                                </span>
+
+                                <span class="icon">
+                                    <i class="material-icons fullscreen">fullscreen</i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="settings">
+                        <div class="playback">
+                            <span>Velocidad de reproducción</span>
+                            <ul>
+                                <li data-speed="0.25">0.25</li>
+
+                                <li data-speed="0.5">0.5</li>
+
+                                <li data-speed="0.75">0.75</li>
+
+                                <li data-speed="1" class="active">Normal</li>
+
+                                <li data-speed="1.25">1.25</li>
+
+                                <li data-speed="1.5">1.5</li>
+
+                                <li data-speed="1.75">1.75</li>
+
+                                <li data-speed="2">2</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="captions">
+                        <div class="caption">
+                            <span>Selecciona subtitulo</span>
+                            <ul></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <video src="video.mp4" width="100%" height="100%" controls></video> -->
+        <div class="reprod-R">
+            <div id="listVideo1" class="reprod-video-item list-active" onclick="setVideo(1)">
+                <video muted poster="src/perfecta_img.png">
+                    <source src="src/perfecta.mp4" type="video/mp4">
+                </video>
+                <h3>Luis Ramiro - Perfecta</h3>
+            </div>
+
+            <div id="listVideo2" class="reprod-video-item" onclick="setVideo(2)">
+                <video muted poster="src/baker.png">
+                    <source src="src/boney.mp4" type="video/mp4">
+                </video>
+                <h3>Boney M. - Ma Baker</h3>
+            </div>
+
+            <div id="listVideo3" class="reprod-video-item" onclick="setVideo(3)">
+                <video muted poster="src/gimme.png">
+                    <source src="src/gimme.mp4" type="video/mp4">
+                </video>
+                <h3>ABBA - Gimme! Gimme! Gimme!</h3>
+            </div>
+
+            <div id="listVideo4" class="reprod-video-item" onclick="setVideo(4)">
+                <video muted poster="src/rasputin.png">
+                    <source src="src/rasputin.mp4" type="video/mp4">
+                </video>
+                <h3>Boney M. - Rasputin</h3>
+            </div>
+            
+            <div id="listVideo5" class="reprod-video-item" onclick="setVideo(5)">
+                <video muted poster="src/rivers.png">
+                    <source src="src/rivers.mp4" type="video/mp4">
+                </video>
+                <h3>Boney M. - Rivers of Babylon</h3>
+            </div>
+        </div>
+
+
+        <script src="js/function.js"></script>
+    </section>
+</body>
+
+</html>
