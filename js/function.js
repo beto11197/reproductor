@@ -626,24 +626,24 @@ function setVideo(valVideo){
 
     switch (valVideo) {
         case 1:
-            mainVideo.poster = "src/perfecta_img.png"
-            mainVideo.src = "src/perfecta.mp4"
+            mainVideo.poster = "https://appenmonterrey.com/rabbeat/app/media/perfecta_img.png"
+            mainVideo.src = "https://appenmonterrey.com/rabbeat/app/media/perfecta.mp4"
             break;
         case 2:
-            mainVideo.poster = "src/baker.png"
-            mainVideo.src = "src/boney.mp4"
+            mainVideo.poster = "https://appenmonterrey.com/rabbeat/app/media/baker.png"
+            mainVideo.src = "https://appenmonterrey.com/rabbeat/app/media/boney.mp4"
             break;
         case 3:
-            mainVideo.poster = "src/gimme.png"
-            mainVideo.src = "src/gimme.mp4"
+            mainVideo.poster = "https://appenmonterrey.com/rabbeat/app/media/gimme.png"
+            mainVideo.src = "https://appenmonterrey.com/rabbeat/app/media/gimme.mp4"
             break;
         case 4:
-            mainVideo.poster = "src/rasputin.png"
-            mainVideo.src = "src/rasputin.mp4"
+            mainVideo.poster = "https://appenmonterrey.com/rabbeat/app/media/rasputin.png"
+            mainVideo.src = "https://appenmonterrey.com/rabbeat/app/media/rasputin.mp4"
             break;
         case 5:
-            mainVideo.poster = "src/rivers.png"
-            mainVideo.src = "src/rivers.mp4"
+            mainVideo.poster = "https://appenmonterrey.com/rabbeat/app/media/rivers.png"
+            mainVideo.src = "https://appenmonterrey.com/rabbeat/app/media/rivers.mp4"
             break;
     
         default:
